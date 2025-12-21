@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2023 Census — New Zealand Europeans by Age Group</title>
+  <style>
+    :root{
+      --text:#111827;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --header:#f3f4f6;
+      --band:#fafafa;
+      --group:#f9fafb;
+      --accent:#111827;
+    }
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      margin:0;
+      background:#fff;
+    }
+    .page{
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 0 18px 48px;
+    }
+    header h1{
+      font-size: 24px;
+      line-height: 1.2;
+      margin: 0 0 6px 0;
+      letter-spacing: -0.2px;
+    }
+    header p{
+      margin: 0 0 18px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    table{
+      width:100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow:hidden; /* rounds corners in some browsers */
+      font-size: 14px;
+    }
+    thead th{
+      background: var(--header);
+      text-align: left;
+      padding: 12px 12px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    tbody td{
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even){ background: var(--band); }
+
+    .num{ text-align: right; font-variant-numeric: tabular-nums; }
+    .pct{ text-align: right; font-variant-numeric: tabular-nums; }
+
+    /* Hierarchy and emphasis */
+    .group{
+      background: var(--group) !important;
+      font-weight: 700;
+    }
+    .total{
+      font-weight: 800;
+    }
+    .sub{
+      padding-left: 28px;
+      color: var(--accent);
+    }
+    .footnote{
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header>
+      <h1>2023 Census — New Zealand Europeans by Age Group</h1>
+      <p>NZ Europeans, total population, and percentage by age band.</p>
+    </header>
+
+    <table aria-label="2023 Census — New Zealand Europeans by Age Group">
+      <thead>
+        <tr>
+          <th scope="col">Age Group</th>
+          <th scope="col" class="num">NZ Europeans</th>
+          <th scope="col" class="num">Total Population</th>
+          <th scope="col" class="pct">White %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="total">
+          <td>Total – all ages</td>
+          <td class="num">2,790,354</td>
+          <td class="num">4,993,914</td>
+          <td class="pct">55.88%</td>
+        </tr>
+
+        <tr class="group">
+          <td>Under 15 years</td>
+          <td class="num">393,123</td>
+          <td class="num">936,297</td>
+          <td class="pct">41.99%</td>
+        </tr>
+        <tr>
+          <td class="sub">0–4 years</td>
+          <td class="num">112,740</td>
+          <td class="num">288,387</td>
+          <td class="pct">39.09%</td>
+        </tr>
+        <tr>
+          <td class="sub">5–9 years</td>
+          <td class="num">130,260</td>
+          <td class="num">311,736</td>
+          <td class="pct">41.79%</td>
+        </tr>
+        <tr>
+          <td class="sub">10–14 years</td>
+          <td class="num">150,123</td>
+          <td class="num">336,174</td>
+          <td class="pct">44.66%</td>
+        </tr>
+
+        <tr class="group">
+          <td>15–29 years</td>
+          <td class="num">455,436</td>
+          <td class="num">968,304</td>
+          <td class="pct">47.03%</td>
+        </tr>
+        <tr>
+          <td class="sub">15–19 years</td>
+          <td class="num">151,767</td>
+          <td class="num">320,637</td>
+          <td class="pct">47.33%</td>
+        </tr>
+        <tr>
+          <td class="sub">20–24 years</td>
+          <td class="num">148,848</td>
+          <td class="num">311,952</td>
+          <td class="pct">47.72%</td>
+        </tr>
+        <tr>
+          <td class="sub">25–29 years</td>
+          <td class="num">154,821</td>
+          <td class="num">335,715</td>
+          <td class="pct">46.12%</td>
+        </tr>
+
+        <tr class="group">
+          <td>30–64 years</td>
+          <td class="num">1,280,856</td>
+          <td class="num">2,260,728</td>
+          <td class="pct">56.66%</td>
+        </tr>
+        <tr>
+          <td class="sub">30–34 years</td>
+          <td class="num">171,471</td>
+          <td class="num">374,079</td>
+          <td class="pct">45.84%</td>
+        </tr>
+        <tr>
+          <td class="sub">35–39 years</td>
+          <td class="num">162,477</td>
+          <td class="num">345,537</td>
+          <td class="pct">47.02%</td>
+        </tr>
+        <tr>
+          <td class="sub">40–44 years</td>
+          <td class="num">159,228</td>
+          <td class="num">315,765</td>
+          <td class="pct">50.43%</td>
+        </tr>
+        <tr>
+          <td class="sub">45–49 years</td>
+          <td class="num">174,522</td>
+          <td class="num">302,220</td>
+          <td class="pct">57.75%</td>
+        </tr>
+        <tr>
+          <td class="sub">50–54 years</td>
+          <td class="num">203,634</td>
+          <td class="num">322,635</td>
+          <td class="pct">63.12%</td>
+        </tr>
+        <tr>
+          <td class="sub">55–59 years</td>
+          <td class="num">201,477</td>
+          <td class="num">304,074</td>
+          <td class="pct">66.26%</td>
+        </tr>
+        <tr>
+          <td class="sub">60–64 years</td>
+          <td class="num">208,047</td>
+          <td class="num">296,418</td>
+          <td class="pct">70.19%</td>
+        </tr>
+
+        <tr class="group">
+          <td>65 years and over</td>
+          <td class="num">660,939</td>
+          <td class="num">828,585</td>
+          <td class="pct">79.77%</td>
+        </tr>
+        <tr>
+          <td class="sub">65–69 years</td>
+          <td class="num">184,503</td>
+          <td class="num">252,492</td>
+          <td class="pct">73.07%</td>
+        </tr>
+        <tr>
+          <td class="sub">70–74 years</td>
+          <td class="num">166,980</td>
+          <td class="num">213,438</td>
+          <td class="pct">78.23%</td>
+        </tr>
+        <tr>
+          <td class="sub">75–79 years</td>
+          <td class="num">136,779</td>
+          <td class="num">163,632</td>
+          <td class="pct">83.59%</td>
+        </tr>
+        <tr>
+          <td class="sub">80–84 years</td>
+          <td class="num">92,340</td>
+          <td class="num">107,991</td>
+          <td class="pct">85.51%</td>
+        </tr>
+        <tr>
+          <td class="sub">85–89 years</td>
+          <td class="num">50,310</td>
+          <td class="num">57,939</td>
+          <td class="pct">86.83%</td>
+        </tr>
+        <tr>
+          <td class="sub">90 years and over</td>
+          <td class="num">30,027</td>
+          <td class="num">33,093</td>
+          <td class="pct">90.74%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="footnote">
+      Note: “White %” reflects NZ Europeans as a share of the total population within each age group.
+    </p>
+  </main>
+</body>
+</html>
